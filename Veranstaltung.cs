@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hochschulverwaltung
 {
-    internal class Veranstaltung
+    internal abstract class Veranstaltung
     {
         enum VeranstaltungsTyp
         {
@@ -20,5 +20,7 @@ namespace Hochschulverwaltung
         private string name;
         private List<Student> students;
         private VeranstaltungsTyp veranstaltungsTyp;
+        private string beschreibung;
+
     }
 }

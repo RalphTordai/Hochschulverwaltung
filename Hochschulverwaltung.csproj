@@ -53,10 +53,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Infoveranstaltung.cs" />
+    <Compile Include="Klausur.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Raum.cs" />
+    <Compile Include="Sonstiges.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Termin.cs" />
     <Compile Include="Veranstaltung.cs" />
