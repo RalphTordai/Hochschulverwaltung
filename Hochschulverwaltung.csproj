@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Dozent.cs" />
     <Compile Include="Jahrgang.cs" />
+    <Compile Include="RessourcenErstellen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RessourcenErstellen.Designer.cs">
+      <DependentUpon>RessourcenErstellen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Startform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RessourcenErstellen.resx">
+      <DependentUpon>RessourcenErstellen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Startform.resx">
       <DependentUpon>Startform.cs</DependentUpon>
     </EmbeddedResource>
