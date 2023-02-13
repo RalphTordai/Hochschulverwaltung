@@ -18,9 +18,11 @@ namespace Hochschulverwaltung
         }
         private string uuid;
         private string name;
-        private List<Student> students;
+        private List<Student> studenten;
         private VeranstaltungsTyp veranstaltungsTyp;
         private string beschreibung;
+
+        private List<Termin> termine;
 
     }
 }

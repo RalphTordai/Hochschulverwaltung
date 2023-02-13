@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Hochschulverwaltung
 {
-    public partial class Form1 : Form
+    public partial class Startform : Form
     {
-        public Form1()
+        public Startform()
         {
             InitializeComponent();
+        }
+
+        private void Btn_RessourcenErstellen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Einstellungen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Hochschulverwaltung
 {
-    internal class Dozent : Person
+    internal class Studiengruppe
     {
-        private string angestelltenVerhaeltniss;
-        public Dozent(string nachName, string vorName, string eMail) : base(nachName, vorName, eMail)
+        private string uuid;
+        private string name; // z. B. dWi2021A2
+
+        public Studiengruppe(string name)
         {
+            this.name = name;
         }
     }
 }
