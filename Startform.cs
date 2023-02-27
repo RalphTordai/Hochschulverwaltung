@@ -12,6 +12,7 @@ namespace Hochschulverwaltung
 {
     public partial class Startform : Form
     {
+        RessourcenErstellen ressourcenErstellen;
         public Startform()
         {
             InitializeComponent();
@@ -19,10 +20,17 @@ namespace Hochschulverwaltung
 
         private void Btn_RessourcenErstellen_Click(object sender, EventArgs e)
         {
-
+            ressourcenErstellen = new RessourcenErstellen();
+            ressourcenErstellen.Show();
+            this.Hide();
         }
 
         private void Btn_Einstellungen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tbl_Main_Paint(object sender, PaintEventArgs e)
         {
 
         }

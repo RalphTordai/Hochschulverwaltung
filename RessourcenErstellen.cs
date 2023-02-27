@@ -12,9 +12,15 @@ namespace Hochschulverwaltung
 {
     public partial class RessourcenErstellen : Form
     {
+        UCRessourcenErstellen uCRessourcenErstellen;
         public RessourcenErstellen()
         {
             InitializeComponent();
+            uCRessourcenErstellen = new UCRessourcenErstellen();
+            Tbl_RessourcenErstellen.Controls.Add(uCRessourcenErstellen);
+            uCRessourcenErstellen.Show();
+            uCRessourcenErstellen.Dock = System.Windows.Forms.DockStyle.Fill;
+
         }
     }
 }

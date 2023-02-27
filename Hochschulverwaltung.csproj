@@ -69,6 +69,12 @@
     <Compile Include="Sonstiges.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Termin.cs" />
+    <Compile Include="UCRessourcenErstellen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCRessourcenErstellen.Designer.cs">
+      <DependentUpon>UCRessourcenErstellen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Veranstaltung.cs" />
     <Compile Include="Vorlesung.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -85,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Startform.resx">
       <DependentUpon>Startform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCRessourcenErstellen.resx">
+      <DependentUpon>UCRessourcenErstellen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

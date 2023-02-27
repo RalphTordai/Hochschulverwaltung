@@ -64,6 +64,7 @@
             this.Tbl_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.Tbl_Main.Size = new System.Drawing.Size(520, 550);
             this.Tbl_Main.TabIndex = 0;
+            this.Tbl_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.Tbl_Main_Paint);
             // 
             // Btn_RessourcenErstellen
             // 
