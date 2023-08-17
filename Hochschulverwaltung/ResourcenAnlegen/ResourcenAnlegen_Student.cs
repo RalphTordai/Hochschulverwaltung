@@ -17,9 +17,10 @@ namespace Hochschulverwaltung
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Bttn_Erstellen_Click(object sender, EventArgs e)
         {
-             new Student( inputName.Text, int.Parse(inputMatrikelnr.Text), inputStudiengang.Text, inputJahrgang.Text, inputGruppe.Text);
+            try { new Student(inputName.Text, int.Parse(inputMatrikelnr.Text), inputStudiengang.Text, inputJahrgang.Text, inputGruppe.Text); }
+            catch { } 
         }
     }
 }

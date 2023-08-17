@@ -13,21 +13,14 @@ namespace Hochschulverwaltung
     public partial class ResourcenAnlegen : UserControl
     {
 
-        List<Dozent> Dozenten { get; } = null;
-
-        List<Kurs> Kurse { get; } = null;
-
-        List<Stundenplan> Stundenplaene { get; } = null;
-
+        
         UserControl auswahl = null;
 
-        public ResourcenAnlegen(List<Dozent> dozenten, List<Kurs> kurse, List<Stundenplan> stundenplaene)
+        public ResourcenAnlegen()
         {
             InitializeComponent();
 
-            Dozenten = dozenten;
-            Kurse = kurse;
-            Stundenplaene = stundenplaene;
+            
             auswahl = new ResourcenAnlegen_Student();
             layoutResourcenAnlegen.Controls.Add(auswahl);
         }
@@ -47,6 +40,9 @@ namespace Hochschulverwaltung
 
                 case "Student":
                     auswahl = new ResourcenAnlegen_Student();
+                    break;
+                case "Kurs":
+                    auswahl = new ResourcenAnlegen_Kurs();
 
                     break;
 

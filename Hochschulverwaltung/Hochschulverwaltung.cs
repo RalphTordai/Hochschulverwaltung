@@ -26,7 +26,7 @@ namespace Hochschulverwaltung
 
             InitializeComponent();
 
-            openWindow = new ResourcenAnlegen( Dozenten, Kurse, Stundenplaene);
+            openWindow = new ResourcenAnlegen();
 
             layoutMainWindow.Controls.Add(openWindow);
             openWindow.Dock = DockStyle.Fill;
@@ -34,7 +34,7 @@ namespace Hochschulverwaltung
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openWindow = new ResourcenAnlegen( Dozenten, Kurse, Stundenplaene);
+            openWindow = new ResourcenAnlegen();
             layoutMainWindow.Controls.RemoveAt(layoutMainWindow.Controls.Count - 1);
             layoutMainWindow.Controls.Add(openWindow);
             openWindow.Dock = DockStyle.Fill;
@@ -42,7 +42,10 @@ namespace Hochschulverwaltung
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            openWindow = new Terminplan();
+            layoutMainWindow.Controls.RemoveAt(layoutMainWindow.Controls.Count - 1);
+            layoutMainWindow.Controls.Add(openWindow);
+            openWindow.Dock = DockStyle.Fill;
         }
 
     }

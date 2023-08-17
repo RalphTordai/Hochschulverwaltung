@@ -65,6 +65,12 @@
     <Compile Include="ResourcenAnlegen\ResourcenAnlegen_Dozent.Designer.cs">
       <DependentUpon>ResourcenAnlegen_Dozent.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResourcenAnlegen\ResourcenAnlegen_Kurs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResourcenAnlegen\ResourcenAnlegen_Kurs.Designer.cs">
+      <DependentUpon>ResourcenAnlegen_Kurs.cs</DependentUpon>
+    </Compile>
     <Compile Include="ResourcenAnlegen\ResourcenAnlegen_Lerngruppe.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -87,6 +93,13 @@
     <Compile Include="Dozent.cs" />
     <Compile Include="Kurs.cs" />
     <Compile Include="Stundenplan.cs" />
+    <Compile Include="Termin.cs" />
+    <Compile Include="Terminplan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Terminplan.Designer.cs">
+      <DependentUpon>Terminplan.cs</DependentUpon>
+    </Compile>
     <Compile Include="TreeViewStudenten.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -105,6 +118,9 @@
     <EmbeddedResource Include="ResourcenAnlegen\ResourcenAnlegen_Dozent.resx">
       <DependentUpon>ResourcenAnlegen_Dozent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ResourcenAnlegen\ResourcenAnlegen_Kurs.resx">
+      <DependentUpon>ResourcenAnlegen_Kurs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ResourcenAnlegen\ResourcenAnlegen_Lerngruppe.resx">
       <DependentUpon>ResourcenAnlegen_Lerngruppe.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResourcenAnlegen\ResourcenAnlegen_Student.resx">
       <DependentUpon>ResourcenAnlegen_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Terminplan.resx">
+      <DependentUpon>Terminplan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

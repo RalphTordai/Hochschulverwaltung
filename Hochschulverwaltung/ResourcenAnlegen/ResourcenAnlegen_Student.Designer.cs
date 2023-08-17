@@ -38,8 +38,8 @@
             this.labelStudiengang = new System.Windows.Forms.Label();
             this.labelGruppe = new System.Windows.Forms.Label();
             this.inputGruppe = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.inputStudiengang = new System.Windows.Forms.ComboBox();
+            this.Bttn_Erstellen = new System.Windows.Forms.Button();
             this.layoutResourcenAnlegen.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -153,16 +153,6 @@
             this.inputGruppe.Size = new System.Drawing.Size(274, 20);
             this.inputGruppe.TabIndex = 11;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(384, 243);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 39);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // inputStudiengang
             // 
             this.inputStudiengang.FormattingEnabled = true;
@@ -177,11 +167,21 @@
             this.inputStudiengang.Size = new System.Drawing.Size(121, 21);
             this.inputStudiengang.TabIndex = 12;
             // 
+            // Bttn_Erstellen
+            // 
+            this.Bttn_Erstellen.Location = new System.Drawing.Point(384, 243);
+            this.Bttn_Erstellen.Name = "Bttn_Erstellen";
+            this.Bttn_Erstellen.Size = new System.Drawing.Size(87, 39);
+            this.Bttn_Erstellen.TabIndex = 2;
+            this.Bttn_Erstellen.Text = "Erstellen";
+            this.Bttn_Erstellen.UseVisualStyleBackColor = true;
+            this.Bttn_Erstellen.Click += new System.EventHandler(this.Bttn_Erstellen_Click);
+            // 
             // ResourcenAnlegen_Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Bttn_Erstellen);
             this.Controls.Add(this.layoutResourcenAnlegen);
             this.Name = "ResourcenAnlegen_Student";
             this.Size = new System.Drawing.Size(500, 300);
@@ -203,7 +203,7 @@
         private System.Windows.Forms.Label labelStudiengang;
         private System.Windows.Forms.Label labelGruppe;
         private System.Windows.Forms.TextBox inputGruppe;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Bttn_Erstellen;
         private System.Windows.Forms.ComboBox inputStudiengang;
     }
 }

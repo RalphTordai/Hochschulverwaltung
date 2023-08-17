@@ -16,5 +16,14 @@ namespace Hochschulverwaltung
         {
             InitializeComponent();
         }
+
+        private void Bttn_Erstellen_Click(object sender, EventArgs e)
+        {
+            if(inputFestangestellt.Text == "Ja") 
+            { new Dozent(inputName.Text, true); }
+            else { new Dozent(inputName.Text, false); }
+            inputFestangestellt.Text = null;
+            inputName.Text = null;
+        }
     }
 }
