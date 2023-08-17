@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hochschulverwaltung
 {
-    public partial class MainWindow : Form
+    public partial class ResourcenAnlegen_Dozent : UserControl
     {
-        public MainWindow()
+        public ResourcenAnlegen_Dozent()
         {
             InitializeComponent();
         }
