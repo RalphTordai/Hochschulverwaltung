@@ -53,9 +53,9 @@
             // layoutNavigationBar
             // 
             this.layoutNavigationBar.AutoScroll = true;
+            this.layoutNavigationBar.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.layoutNavigationBar.Controls.Add(this.button1);
             this.layoutNavigationBar.Controls.Add(this.button2);
-            this.layoutNavigationBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutNavigationBar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.layoutNavigationBar.Location = new System.Drawing.Point(806, 3);
             this.layoutNavigationBar.Name = "layoutNavigationBar";
@@ -66,21 +66,23 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Image = global::Hochschulverwaltung.Properties.Resources.plus;
+            this.button1.Location = new System.Drawing.Point(14, 14);
+            this.button1.Margin = new System.Windows.Forms.Padding(14, 14, 14, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(65, 65);
             this.button1.TabIndex = 0;
-            this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 74);
+            this.button2.Image = global::Hochschulverwaltung.Properties.Resources.datum;
+            this.button2.Location = new System.Drawing.Point(14, 89);
+            this.button2.Margin = new System.Windows.Forms.Padding(14, 5, 14, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(65, 65);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

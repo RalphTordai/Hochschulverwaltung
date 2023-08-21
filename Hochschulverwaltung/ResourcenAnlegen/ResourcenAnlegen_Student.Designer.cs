@@ -157,10 +157,10 @@
             // 
             this.inputStudiengang.FormattingEnabled = true;
             this.inputStudiengang.Items.AddRange(new object[] {
-            "WI ",
+            "WI",
             "EAM",
             "BA",
-            "VWA ",
+            "VWA",
             "HM"});
             this.inputStudiengang.Location = new System.Drawing.Point(23, 123);
             this.inputStudiengang.Name = "inputStudiengang";

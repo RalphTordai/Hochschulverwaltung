@@ -114,6 +114,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ResourcenAnlegen\ResourcenAnlegen_Dozent.resx">
       <DependentUpon>ResourcenAnlegen_Dozent.cs</DependentUpon>
@@ -145,6 +146,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rescources\datum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rescources\pfeil-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rescources\pfeil-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rescources\plus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,16 +13,16 @@ namespace Hochschulverwaltung
     public partial class Hochschulverwaltung : Form
     {
 
-        List<Dozent> Dozenten { get; } = new List<Dozent>();
         
-        List<Kurs> Kurse { get; } = new List<Kurs>();
-
-        List<Stundenplan> Stundenplaene { get; } = new List<Stundenplan>();
 
         UserControl openWindow = null;
 
         public Hochschulverwaltung()
         {
+            for (int i = 0; i < 100; i++)
+            {
+                RandomStudentGenerator.GenerateRandomStudent();
+            }
 
             InitializeComponent();
 

@@ -17,10 +17,7 @@ namespace Hochschulverwaltung
         {
             this.Dock = DockStyle.Fill;
 
-            for (int i = 0; i < 100; i++)
-            {
-                RandomStudentGenerator.GenerateRandomStudent();
-            }
+            
             
             InitializeComponent();
             FillInputNameSelection();

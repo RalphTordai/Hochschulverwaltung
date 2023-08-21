@@ -31,12 +31,12 @@
             this.tlp_Studenplan = new System.Windows.Forms.TableLayoutPanel();
             this.tbl_Main = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Bttn_WocheZurueck = new System.Windows.Forms.Button();
             this.Bttn_WochVor = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dtp_beginLesson = new System.Windows.Forms.DateTimePicker();
             this.tbx_durationLesson = new System.Windows.Forms.TextBox();
             this.bttn_addLesson = new System.Windows.Forms.Button();
+            this.Bttn_WocheZurueck = new System.Windows.Forms.Button();
             this.tbl_Main.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,25 +103,14 @@
             this.comboBox1.Size = new System.Drawing.Size(200, 21);
             this.comboBox1.TabIndex = 1;
             // 
-            // Bttn_WocheZurueck
-            // 
-            this.Bttn_WocheZurueck.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Bttn_WocheZurueck.Location = new System.Drawing.Point(415, 3);
-            this.Bttn_WocheZurueck.Name = "Bttn_WocheZurueck";
-            this.Bttn_WocheZurueck.Size = new System.Drawing.Size(200, 29);
-            this.Bttn_WocheZurueck.TabIndex = 2;
-            this.Bttn_WocheZurueck.Text = "<-";
-            this.Bttn_WocheZurueck.UseVisualStyleBackColor = true;
-            this.Bttn_WocheZurueck.Click += new System.EventHandler(this.Bttn_WocheZurueck_Click);
-            // 
             // Bttn_WochVor
             // 
             this.Bttn_WochVor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Bttn_WochVor.Image = global::Hochschulverwaltung.Properties.Resources.pfeil_2;
             this.Bttn_WochVor.Location = new System.Drawing.Point(621, 3);
             this.Bttn_WochVor.Name = "Bttn_WochVor";
             this.Bttn_WochVor.Size = new System.Drawing.Size(200, 29);
             this.Bttn_WochVor.TabIndex = 3;
-            this.Bttn_WochVor.Text = "->";
             this.Bttn_WochVor.UseVisualStyleBackColor = true;
             this.Bttn_WochVor.Click += new System.EventHandler(this.Bttn_WochVor_Click);
             // 
@@ -161,6 +150,17 @@
             this.bttn_addLesson.Text = "Termin einfügen";
             this.bttn_addLesson.UseVisualStyleBackColor = true;
             this.bttn_addLesson.Click += new System.EventHandler(this.bttn_addLesson_Click);
+            // 
+            // Bttn_WocheZurueck
+            // 
+            this.Bttn_WocheZurueck.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Bttn_WocheZurueck.Image = global::Hochschulverwaltung.Properties.Resources.pfeil_1;
+            this.Bttn_WocheZurueck.Location = new System.Drawing.Point(415, 3);
+            this.Bttn_WocheZurueck.Name = "Bttn_WocheZurueck";
+            this.Bttn_WocheZurueck.Size = new System.Drawing.Size(200, 29);
+            this.Bttn_WocheZurueck.TabIndex = 2;
+            this.Bttn_WocheZurueck.UseVisualStyleBackColor = true;
+            this.Bttn_WocheZurueck.Click += new System.EventHandler(this.Bttn_WocheZurueck_Click);
             // 
             // Terminplan
             // 
